@@ -1,0 +1,158 @@
+.back{
+  width: 100%;
+  height: 100vh;
+  background: url('../assets/bg-words.jpg');
+  background-size: cover;
+}
+
+
+.container{
+  width: 90%;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+header{
+  width: 100%;
+
+  h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+  }
+
+  p{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+  }
+}
+
+.input-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  p{
+    font-size: 18px;
+  }
+
+  input{
+    width: 40px;
+    margin-left: 5px;
+    text-align: center;
+    background-color: rgb(29, 28, 28);
+    border: 2px solid white;
+    color: white;
+    border-radius: 4px;
+  }
+}
+
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.output-div{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+
+  p{
+    text-align: center;
+  }
+
+  textarea{
+    height: 40vh;
+    outline: 0;
+    border: 3px solid black;
+    padding: 5px;
+  }
+}
+
+#copyBtn{
+  height: 40px;
+  background-color: rgb(51, 50, 50);
+  font-size: 18px;
+  outline: 0;
+  border: 3px solid black;
+  border-top: none;
+  cursor: pointer;
+  color: white;
+  transition-duration: 1s;
+
+  &:active{
+    background-color: white;
+    color: black;
+  }
+
+  &:hover{
+    background-color: white;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 34em) {
+
+  .input-div{
+    p{
+      font-size: 30px;
+    }
+
+    input{
+      font-size: 30px;
+    }
+  }
+
+  .output-div{
+    p{
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 72.5em) {
+
+  .container{
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 90em) {
+
+  .container{
+    width: 50%;
+  }
+
+  header{
+    h1{
+      font-size: 70px;
+    }
+
+    p{
+      font-size: 70px;
+    }
+  }
+
+  .input-div{
+    p{
+      font-size: 40px;
+    }
+  }
+
+  .output-div{
+    p{
+      font-size: 28px;
+    }
+  }
+
+
+}
